@@ -134,11 +134,15 @@ def save_to_excel(data, file_path):
 # 프로세스 제어 및 GUI 업데이트
 def process_and_save():
     videos = fetch_videos()
+    total_number = len(videos)
     data = []
+    i=0
     for title, url, date in videos:
+        
         transcript = get_youtube_transcript(extract_video_id(url))
         data.append((title, url, date, transcript))
-        print(f'{date} 작업 중입니다. 오정훈님')
+        print(f'{total_number} 중 {i} {date} 작업 중입니다. 오정훈님')
+        i+=1
     output_file_path = filedialog.asksaveasfilename(defaultextension=".xlsx", filetypes=[("Excel files", "*.xlsx")])
     if output_file_path:
         save_to_excel(data, output_file_path)
