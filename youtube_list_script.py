@@ -7,7 +7,10 @@
 
 # # YouTube API 키와 채널 ID
 api_key = 'AIzaSyCXDwNUAeUIHbyk_CEmH1nQ_BAaJ-lniVQ'
-channel_id = 'UCHEWCYP9MbA9RSUiMPvqK9A'
+# channel_id = 'UCHEWCYP9MbA9RSUiMPvqK9A'
+
+channel_id = 'UCtfGLmp6xMwvPoYpI-A5Kdg'
+
 
 
 # # YouTube 동영상 목록 가져오기
